@@ -1,7 +1,10 @@
 import About from '@/components/About'
+import Contact from '@/components/Contact'
+import Experience from '@/components/Experience'
 import Intro from '@/components/Intro'
 import Project from '@/components/Project'
 import SectionDivider from '@/components/SectionDivider'
+import Skills from '@/components/Skills'
 import React from 'react'
 
 const Portfolio = () => {
@@ -11,6 +14,9 @@ const Portfolio = () => {
       <SectionDivider />
       <About />
       <Project />
+      <Skills />
+      <Experience />
+      <Contact />
     </main>
   )
 }

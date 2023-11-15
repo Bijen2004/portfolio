@@ -6,10 +6,19 @@ import Link from 'next/link';
 import {HiDownload} from "react-icons/hi"
 import {BsLinkedin} from "react-icons/bs"
 import { FaGithubSquare } from 'react-icons/fa';
+import { useSectionInView } from '@/lib/hooks';
+import { useActiveSectionContext } from '@/context/active-section-context';
 
 const Intro = () => {
+
+    const {ref} = useSectionInView('Home',0.5);
+    const {setActiveSection,setTimeOfLastClick} = useActiveSectionContext();
+
+
   return (
-    <section className='mb-28 max-w-[50rem] text-center sm:mb-0 z-20 scroll-mt-40' id='home'>
+    <section 
+    ref = {ref}
+    className='mb-28 max-w-[50rem] text-center sm:mb-0 z-20 scroll-mt-40' id='home'>
         <div className='flex items-center justify-center'>
             <div className='relative'>
                 <motion.div
@@ -45,11 +54,14 @@ const Intro = () => {
         transition={{
             delay:0.1,
         }}>
-            <Link href={"#contact"} className='bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none hover:scale-110 hover:bg-gray-950 active:scale-105 transition'>Contact me</Link>
-            <a className='group bg-white px-7 py-3 flex items-center gap-2 rounded-full  outline-none hover:scale-110  active:scale-105 transition cursor-pointer border border-black/10' href='/CV.pdf' download>Download CV <HiDownload className="opacity-60 group-hover:translate-y-1" /></a>
+            <Link href={"#contact"} className='bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none hover:scale-110 hover:bg-gray-950 active:scale-105 transition' onClick={()=>{
+                setActiveSection("Contact");
+                setTimeOfLastClick(Date.now());
+            }}>Contact me</Link>
+            <a className='group bg-white px-7 py-3 flex items-center gap-2 rounded-full  outline-none hover:scale-110  active:scale-105  transition cursor-pointer border border-black/10 focus:border-2 focus:border-gray-900 dark:bg-white/10' href='/CV.pdf' download>Download CV <HiDownload className="opacity-60 group-hover:translate-y-1" /></a>
             <div className='flex flex-row gap-3 items-center justify-center px-4 text-lg font-medium'>
-                <a className='bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full outline-none hover:scale-[1.15]  active:scale-105 transition cursor-pointer border border-black/10 hover:text-gray-950' href='https://www.linkedin.com/in/bijen-shrestha-3633a1276/' target='_blank'><BsLinkedin /></a>
-                <a className='bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full text-[1.35rem] outline-none hover:scale-[1.15]  active:scale-105 transition cursor-pointer border border-black/10 hover:text-gray-950' href='https://github.com/Bijen2004' target='_blank'><FaGithubSquare /></a>
+                <a className='bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full outline-none hover:scale-[1.15]  active:scale-105 transition cursor-pointer border border-black/10 hover:text-gray-950 focus:border-2 focus:border-gray-900 dark:bg-white/10 dark:text-white/60' href='https://www.linkedin.com/in/bijen-shrestha-3633a1276/' target='_blank'><BsLinkedin /></a>
+                <a className='bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full text-[1.35rem] outline-none hover:scale-[1.15]  active:scale-105 transition cursor-pointer border border-black/10 hover:text-gray-950 focus:border-2 focus:border-gray-900 dark:bg-white/10 dark:text-white/60' href='https://github.com/Bijen2004' target='_blank'><FaGithubSquare /></a>
             </div>
            
         </motion.div>
