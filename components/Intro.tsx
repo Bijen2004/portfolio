@@ -45,7 +45,7 @@ const Intro = () => {
         <motion.h1 className='mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-3xl'
         initial={{opacity:0,y:100}}
         animate={{opacity:1,y:0}}>
-           <span className='font-bold'>I am Bijen Shrestha currently studying Software Engineering at PCPS College. I am a fresher and I want to be a web developer.</span> 
+           <span className='font-bold'>I am Bijen Shrestha, currently studying Software Engineering at PCPS College. I really enjoy developing apps and websites. As a fresher, my goal is to become a web developer.</span> 
         </motion.h1>
 
         <motion.div className='flex flex-col sm:flex-row gap-3 items-center justify-center px-4 text-lg font-medium'

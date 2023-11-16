@@ -2,10 +2,10 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
+import chatGptCloneImg from "@/public/chatGptClone.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
-import javaHotelBookingImg from "@/public/javaHotelBooking.png"
+import javaHotelBookingImg from "@/public/javaHotelBooking.png";
 
 export const links = [
   {
@@ -74,7 +74,7 @@ export const projectsData = [
     description:
       "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
     tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+    imageUrl: chatGptCloneImg,
   },
   {
     title: "Word Analytics",
