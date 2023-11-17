@@ -1,12 +1,13 @@
 import React from "react";
 import { FaReact , FaHtml5 , FaJava , FaNode , FaPython , FaDesktop} from "react-icons/fa";
 import chatGptCloneImg from "@/public/chatGptClone.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
 import javaHotelBookingImg from "@/public/javaHotelBooking.png";
 import {IoLogoCss3 , IoLogoJavascript} from "react-icons/io"
+import {IoLogoFirebase} from "react-icons/io5"
 import {SiMysql , SiTypescript , SiTailwindcss , SiMongodb , SiExpress , SiAppwrite , SiPrisma} from "react-icons/si"
 import {TbBrandNextjs , TbBrandFramerMotion} from "react-icons/tb"
 import {MdOutlineDesignServices} from "react-icons/md"
+import trelloAiCloneImg from "@/public/trelloAiClone.png" 
 
 export const links = [
   {
@@ -46,7 +47,7 @@ export const experiencesData = [
   },
   {
     title: "Desktop Applications",
-    language: "(Java , Pythom)",
+    language: "(Java , Python)",
     description:
       "Exploring desktop application development using Java and Python has broadened my understanding of software development beyond web-based platforms. Working with these languages has enabled me to create versatile, robust applications suited for desktop environments.",
     icon: React.createElement(FaDesktop),
@@ -56,7 +57,7 @@ export const experiencesData = [
     title: "Next.js",
     language: "(Next.js , React)",
     description:
-      "Diving into Next.js has elevated my web development skills by leveraging its features like server-side rendering and static site generation. Its seamless integration with React has empowered me to build high-performance web applications with enhanced SEO capabilities.",
+      "Diving into Next.js has elevated my web development skills by using its features like server-side rendering and static site generation. Its seamless integration with React has empowered me to build high-performance web applications with enhanced SEO capabilities.",
     icon: React.createElement(TbBrandNextjs),
     date: "2023-present",
   },
@@ -71,18 +72,18 @@ export const projectsData = [
     imageUrl: javaHotelBookingImg,
   },
   {
-    title: "rmtDev",
+    title: "ChatGpt Clone",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+      "Building a ChatGPT replica, using the OpenAI API key for AI conversational capabilities.",
+    tags: ["Next.js", "React", "Firebase", "Tailwind", "Open-ai Api"],
     imageUrl: chatGptCloneImg,
   },
   {
-    title: "Word Analytics",
+    title: "Trello Clone",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "Creating a Trello-like platform and integrating the OpenAI API to generate daily task summaries for enhanced productivity.",
+    tags: ["Appwrite","Next.js","React","DnD","Open-AI API"],
+    imageUrl: trelloAiCloneImg,
   },
 ] as const;
 
@@ -104,4 +105,5 @@ export const skillsData = [
     { name: "UI/UX", icon: React.createElement(MdOutlineDesignServices) },
     { name: "Appwrite", icon: React.createElement(SiAppwrite) },
     { name: "Prisma", icon: React.createElement(SiPrisma) },
+    { name: "Firebase", icon: React.createElement(IoLogoFirebase) },
   ] as const;

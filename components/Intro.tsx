@@ -55,7 +55,7 @@ const Intro = () => {
                 setActiveSection("Contact");
                 setTimeOfLastClick(Date.now());
             }}>Contact me</Link>
-            <a className='group bg-white px-7 py-3 flex items-center gap-2 rounded-full  outline-none hover:scale-110  active:scale-105  transition cursor-pointer border border-black/10 focus:border-2 focus:border-gray-900 dark:bg-white/10' href='/CV.pdf' download>Download CV <HiDownload className="opacity-60 group-hover:translate-y-1" /></a>
+            <a className='group bg-white px-7 py-3 flex items-center gap-2 rounded-full  outline-none hover:scale-110  active:scale-105  transition cursor-pointer border border-black/10 focus:border-2 focus:border-gray-900 dark:bg-white/10' href='/BijenCV.pdf' download>Download CV <HiDownload className="opacity-60 group-hover:translate-y-1" /></a>
             <div className='flex flex-row gap-3 items-center justify-center px-4 text-lg font-medium'>
                 <a className='bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full outline-none hover:scale-[1.15]  active:scale-105 transition cursor-pointer border border-black/10 hover:text-gray-950 focus:border-2 focus:border-gray-900 dark:bg-white/10 dark:text-white/60' href='https://www.linkedin.com/in/bijen-shrestha-3633a1276/' target='_blank'><BsLinkedin /></a>
                 <a className='bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full text-[1.35rem] outline-none hover:scale-[1.15]  active:scale-105 transition cursor-pointer border border-black/10 hover:text-gray-950 focus:border-2 focus:border-gray-900 dark:bg-white/10 dark:text-white/60' href='https://github.com/Bijen2004' target='_blank'><FaGithubSquare /></a>
