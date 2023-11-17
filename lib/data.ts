@@ -4,7 +4,7 @@ import chatGptCloneImg from "@/public/chatGptClone.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
 import javaHotelBookingImg from "@/public/javaHotelBooking.png";
 import {IoLogoCss3 , IoLogoJavascript} from "react-icons/io"
-import {SiMysql , SiTypescript , SiTailwindcss , SiMongodb , SiExpress} from "react-icons/si"
+import {SiMysql , SiTypescript , SiTailwindcss , SiMongodb , SiExpress , SiAppwrite , SiPrisma} from "react-icons/si"
 import {TbBrandNextjs , TbBrandFramerMotion} from "react-icons/tb"
 import {MdOutlineDesignServices} from "react-icons/md"
 
@@ -102,4 +102,6 @@ export const skillsData = [
     { name: "Python", icon: React.createElement(FaPython) },
     { name: "Framer Motion", icon: React.createElement(TbBrandFramerMotion) },
     { name: "UI/UX", icon: React.createElement(MdOutlineDesignServices) },
+    { name: "Appwrite", icon: React.createElement(SiAppwrite) },
+    { name: "Prisma", icon: React.createElement(SiPrisma) },
   ] as const;

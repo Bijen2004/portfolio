@@ -19,7 +19,7 @@ const Intro = () => {
   return (
     <section 
     ref = {ref}
-    className='mb-28 max-w-[50rem] text-center sm:mb-0 z-20 scroll-mt-40' id='home'>
+    className='mb-28 max-w-[50rem] text-center sm:mb-0 z-20 scroll-mt-80 mt-7 sm:mt-0' id='home'>
         <div className='flex items-center justify-center'>
                 <motion.div
                 initial={{opacity:0,scale:0}}
