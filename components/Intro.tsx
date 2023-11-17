@@ -40,7 +40,7 @@ const Intro = () => {
         initial={{opacity:0,y:100}}
         animate={{opacity:1,y:0}}>
             <div className='flex flex-col'>
-            <span className='font-extrabold'>Hey, I'm Bijen</span> 
+            <span className='font-extrabold'>Hey, I&rsquo;m Bijen</span> 
             <span className='font-extrabold'> a <span className='bg-gradient-to-r from-purple-500 to-pink-500 text-transparent bg-clip-text '>Fullstack Developer.</span></span>
             </div>
         </motion.h1>

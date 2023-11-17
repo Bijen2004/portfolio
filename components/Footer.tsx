@@ -7,7 +7,7 @@ const Footer = () => {
             &copy; 2023 Bijen. All rights reserved.
         </small>
         <p className='text-xs'>
-            <span className='font-semibold'>Available for your next project, let's make it happen!</span>
+            <span className='font-semibold'>Available for your next project, let&rsquo;s make it happen!</span>
         </p>
     </footer>
   )

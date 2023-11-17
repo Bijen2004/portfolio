@@ -23,7 +23,7 @@ const About = () => {
         I am Bijen Shrestha, currently studying Software Engineering at PCPS College. I really enjoy developing apps and websites. As a fresher, my goal is to become a full-stack developer. My primary focus is React, Next.js, and Java. I love working with tailwind css for designing web interfaces and framer motion for interactive user interface animations. I am currently looking for a freelancing job or a full-time position as a web developer. 
         </p>
         <p className='font-medium leading-7'>
-        Apart from coding, I find immense joy in playing basketball and riding bike. These activities keep me active and refreshed. Alongside these, I'm also learning to play the guitar.
+        Apart from coding, I find immense joy in playing basketball and riding bike. These activities keep me active and refreshed. Alongside these, I&rsquo;m also learning to play the guitar.
         </p>
     </motion.section>
   )

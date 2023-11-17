@@ -29,7 +29,7 @@ const Contact = () => {
       once:true,
     }}
     className='mb-20 sm:mb-28 w-[min(100%,38rem)] text-center'>
-        <SectionHeading>Let's <span className='dark:bg-[#ccf78a] text-transparent bg-clip-text bg-[#ff3f3f]'> work together</span></SectionHeading>
+        <SectionHeading>Let&rsquo;s <span className='dark:bg-[#ccf78a] text-transparent bg-clip-text bg-[#ff3f3f]'> work together</span></SectionHeading>
         <p className='text-gray-700 -mt-6 dark:text-white/80'>Please contact me directly at <a href="mailto:shrbijen31@gmail.com" className='font-medium underline'>shrbijen31@gmail.com</a> or through this form.</p>
         <form className='mt-10 flex flex-col dark:text-white ' 
         action={ async formData =>{
