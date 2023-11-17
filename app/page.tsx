@@ -1,6 +1,6 @@
 import About from '@/components/About'
 import Contact from '@/components/Contact'
-import Experience from '@/components/Experience'
+import Expertise from '@/components/Expertise'
 import Intro from '@/components/Intro'
 import Project from '@/components/Project'
 import SectionDivider from '@/components/SectionDivider'
@@ -15,7 +15,7 @@ const Portfolio = () => {
       <About />
       <Project />
       <Skills />
-      <Experience />
+      <Expertise />
       <Contact />
     </main>
   )

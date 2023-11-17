@@ -1,11 +1,12 @@
 import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
+import { FaReact , FaHtml5 , FaJava , FaNode , FaPython , FaDesktop} from "react-icons/fa";
 import chatGptCloneImg from "@/public/chatGptClone.png";
-import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
 import javaHotelBookingImg from "@/public/javaHotelBooking.png";
+import {IoLogoCss3 , IoLogoJavascript} from "react-icons/io"
+import {SiMysql , SiTypescript , SiTailwindcss , SiMongodb , SiExpress} from "react-icons/si"
+import {TbBrandNextjs , TbBrandFramerMotion} from "react-icons/tb"
+import {MdOutlineDesignServices} from "react-icons/md"
 
 export const links = [
   {
@@ -25,8 +26,8 @@ export const links = [
     hash: "#skills",
   },
   {
-    name: "Experience",
-    hash: "#experience",
+    name: "Expertise",
+    hash: "#expertise",
   },
   {
     name: "Contact",
@@ -36,28 +37,28 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "MERN Stack",
+    language: "(React , Mongodb , Express , Nodejs)",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2019",
-  },
-  {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
-    description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
-  },
-  {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
-    description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "Learning the MERN stack opened my eyes to the incredible potential of creating highly functional websites. MERN's blend of MongoDB, Express.js, React, and Node.js presents a dynamic synergy helps manage data well, makes communication smooth between server and client, and creates impressive, user-friendly websites.",
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "2023",
+  },
+  {
+    title: "Desktop Applications",
+    language: "(Java , Pythom)",
+    description:
+      "Exploring desktop application development using Java and Python has broadened my understanding of software development beyond web-based platforms. Working with these languages has enabled me to create versatile, robust applications suited for desktop environments.",
+    icon: React.createElement(FaDesktop),
+    date: "2023",
+  },
+  {
+    title: "Next.js",
+    language: "(Next.js , React)",
+    description:
+      "Diving into Next.js has elevated my web development skills by leveraging its features like server-side rendering and static site generation. Its seamless integration with React has empowered me to build high-performance web applications with enhanced SEO capabilities.",
+    icon: React.createElement(TbBrandNextjs),
+    date: "2023-present",
   },
 ] as const;
 
@@ -86,19 +87,19 @@ export const projectsData = [
 ] as const;
 
 export const skillsData = [
-  "HTML",
-  "CSS",
-  "Java",
-  "My SQL",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Node.js",
-  "Tailwind",
-  "MongoDB",
-  "Express",
-  "Python",
-  "Framer Motion",
-  "UI/UX",
-] as const;
+    { name: "HTML", icon: React.createElement(FaHtml5) },
+    { name: "CSS", icon: React.createElement(IoLogoCss3) },
+    { name: "Java", icon: React.createElement(FaJava) },
+    { name: "My SQL", icon: React.createElement(SiMysql) },
+    { name: "JavaScript", icon: React.createElement(IoLogoJavascript) },
+    { name: "TypeScript", icon: React.createElement(SiTypescript) },
+    { name: "React", icon: React.createElement(FaReact) },
+    { name: "Next.js", icon: React.createElement(TbBrandNextjs) },
+    { name: "Node.js", icon: React.createElement(FaNode) },
+    { name: "Tailwind", icon: React.createElement(SiTailwindcss) },
+    { name: "MongoDB", icon: React.createElement(SiMongodb) },
+    { name: "Express", icon: React.createElement(SiExpress) },
+    { name: "Python", icon: React.createElement(FaPython) },
+    { name: "Framer Motion", icon: React.createElement(TbBrandFramerMotion) },
+    { name: "UI/UX", icon: React.createElement(MdOutlineDesignServices) },
+  ] as const;

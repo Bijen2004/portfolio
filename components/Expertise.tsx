@@ -10,16 +10,16 @@ import { useTheme } from '@/context/theme-context';
 
 const Experience = () => {
 
-    const {ref} = useSectionInView('Experience',0.5);
+    const {ref} = useSectionInView('Expertise',0.5);
     const {theme} = useTheme();
 
 
   return (
     <section 
     ref = {ref}
-    id = "experience"
+    id = "expertise"
     className='scroll-mt-28 mb-28 sm:mb-40'>
-        <SectionHeading>My Experience</SectionHeading>
+        <SectionHeading>My Offerings</SectionHeading>
         <VerticalTimeline lineColor=''>
             {experiencesData.map((item,index)=>(
                 <React.Fragment key={index}>
@@ -43,7 +43,7 @@ const Experience = () => {
                 }}
                 >
                     <h3 className='font-semibold capitalize'>{item.title}</h3>
-                    <p className='font-normal !mt-0'>{item.location}</p>
+                    <p className='font-normal !mt-0'>{item.language}</p>
                     <p className='!mt-1 !font-normal text-gray-700 dark:text-white/75'>{item.description}</p>
                 </VerticalTimelineElement>
                 </React.Fragment>

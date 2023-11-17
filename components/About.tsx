@@ -8,11 +8,7 @@ import { useSectionInView } from '@/lib/hooks';
 const About = () => {
 
   const {ref} = useSectionInView('About');
- 
-
-
-
-
+  
   return (
     <motion.section 
     ref = {ref}
@@ -24,7 +20,7 @@ const About = () => {
     >
        <SectionHeading>About me</SectionHeading>
         <p className='mb-4 font-medium leading-7'>
-        Hey there! I'm studying software engineering and love working with React, Next.js, and Java. I'm open for freelance gigs or jobs. I enjoy solving problems and want to keep learning and building cool stuff in the tech world. Let's work together and create something awesome!
+        I am Bijen Shrestha, currently studying Software Engineering at PCPS College. I really enjoy developing apps and websites. As a fresher, my goal is to become a full-stack developer. My primary focus is React, Next.js, and Java. I love working with tailwind css for designing web interfaces and framer motion for interactive user interface animations. I am currently looking for a freelancing job or a full-time position as a web developer. 
         </p>
         <p className='font-medium leading-7'>
         Apart from coding, I find immense joy in playing basketball and riding bike. These activities keep me active and refreshed. Alongside these, I'm also learning to play the guitar.

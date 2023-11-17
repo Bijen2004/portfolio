@@ -8,6 +8,7 @@ import {BsLinkedin} from "react-icons/bs"
 import { FaGithubSquare } from 'react-icons/fa';
 import { useSectionInView } from '@/lib/hooks';
 import { useActiveSectionContext } from '@/context/active-section-context';
+import IntroDivider from './IntroDivider';
 
 const Intro = () => {
 
@@ -20,32 +21,28 @@ const Intro = () => {
     ref = {ref}
     className='mb-28 max-w-[50rem] text-center sm:mb-0 z-20 scroll-mt-40' id='home'>
         <div className='flex items-center justify-center'>
-            <div className='relative'>
                 <motion.div
                 initial={{opacity:0,scale:0}}
                 animate={{opacity:1,scale:1}}
+                whileHover={{ scale: 1.1}}
                 transition={{
                     type:"tween",
                     duration:0.2
                 }}>
                 <Image src="/Bijen.jpg" alt='Bijen' width="192" height="192" quality="95" priority={true}
-                className='h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl'/>
+                className='h-[110px] w-[110px] sm:h-[160px] sm:w-[160px] rounded-full object-cover border-[0.25rem] border-white dark:border-white/30 shadow-xl'/>
                 </motion.div>
-                <motion.span className='absolute bottom-0 right-0 text-4xl '
-                 initial={{opacity:0,scale:0}}
-                 animate={{opacity:1,scale:1}}
-                 transition={{
-                     type:"spring",
-                     stiffness:125,
-                     delay:0.1,
-                     duration:0.7,
-                 }}>😎</motion.span>
-            </div>
         </div>
-        <motion.h1 className='mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-3xl'
+        <div className='flex items-center justify-center'>      
+        <IntroDivider />
+        </div>
+        <motion.h1 className='mb-10 mt-5 px-4 text-2xl font-medium !leading-[1.5] sm:text-3xl'
         initial={{opacity:0,y:100}}
         animate={{opacity:1,y:0}}>
-           <span className='font-bold'>I am Bijen Shrestha, currently studying Software Engineering at PCPS College. I really enjoy developing apps and websites. As a fresher, my goal is to become a web developer.</span> 
+            <div className='flex flex-col'>
+            <span className='font-extrabold'>Hey, I'm Bijen</span> 
+            <span className='font-extrabold'> a <span className='bg-gradient-to-r from-purple-500 to-pink-500 text-transparent bg-clip-text '>Fullstack Developer.</span></span>
+            </div>
         </motion.h1>
 
         <motion.div className='flex flex-col sm:flex-row gap-3 items-center justify-center px-4 text-lg font-medium'
