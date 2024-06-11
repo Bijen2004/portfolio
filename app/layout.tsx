@@ -7,6 +7,7 @@ import { Toaster } from 'react-hot-toast'
 import Footer from '@/components/Footer'
 import ThemeSwitch from '@/components/ThemeSwitch'
 import ThemeContextProvider from '@/context/theme-context'
+import SuspenseLayout from '@/components/SuspenseLayout'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -27,9 +28,11 @@ export default function RootLayout({
         <div className='bg-[#f6a9eb] absolute top-[-1rem] -z-10 left-[-35rem] h-[31.25rem] w-[50rem] rounded-full  blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] dark:bg-[#1b1a27]'></div>
         <ThemeContextProvider>
         <ActiveSectionContextProvider>
-        <Header />
-        {children}
-        <Footer />
+        <SuspenseLayout>
+          <Header />
+          {children}
+          <Footer />
+        </SuspenseLayout>
         <Toaster position='top-right'/>
         <ThemeSwitch />
         </ActiveSectionContextProvider>
