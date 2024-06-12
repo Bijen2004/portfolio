@@ -9,12 +9,12 @@ const SuspenseAnimation = () => {
         <motion.div
         initial={{x:'-100vw',scale:1}}
         animate={{x:0,scale:1.5}}
-        className='-ml-[100px]'>Bijen</motion.div>
+        className='-ml-[100px] font-semibold'>Bijen</motion.div>
         <motion.div 
         
         initial={{x:'200vw',scale:1}}
         animate={{x:0,scale:1.5}}
-        className='ml-[100px]'>Shrestha</motion.div>
+        className='ml-[100px] font-semibold'>Shrestha</motion.div>
 
         <motion.div
         initial={{x:'200vw',scale:1}}
