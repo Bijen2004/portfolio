@@ -4,10 +4,10 @@ import chatGptCloneImg from "@/public/chatGptClone.png";
 import javaHotelBookingImg from "@/public/javaHotelBooking.png";
 import {IoLogoCss3 , IoLogoJavascript} from "react-icons/io"
 import {IoLogoFirebase} from "react-icons/io5"
-import {SiMysql , SiTypescript , SiTailwindcss , SiMongodb , SiExpress , SiAppwrite , SiPrisma} from "react-icons/si"
-import {TbBrandNextjs , TbBrandFramerMotion} from "react-icons/tb"
+import {SiMysql , SiTypescript , SiTailwindcss , SiMongodb , SiExpress , SiAppwrite , SiPrisma, SiOracle} from "react-icons/si"
+import {TbBrandNextjs , TbBrandFramerMotion, TbBrandRedux} from "react-icons/tb"
 import {MdOutlineDesignServices} from "react-icons/md"
-import trelloAiCloneImg from "@/public/trelloAiClone.png" 
+import trelloAiCloneImg from "@/public/trelloAiClone.png"
 
 export const links = [
   {
@@ -96,6 +96,7 @@ export const skillsData = [
     { name: "TypeScript", icon: React.createElement(SiTypescript) },
     { name: "React", icon: React.createElement(FaReact) },
     { name: "Next.js", icon: React.createElement(TbBrandNextjs) },
+    { name: "Redux", icon: React.createElement(TbBrandRedux) },
     { name: "Node.js", icon: React.createElement(FaNode) },
     { name: "Tailwind", icon: React.createElement(SiTailwindcss) },
     { name: "MongoDB", icon: React.createElement(SiMongodb) },
@@ -106,4 +107,5 @@ export const skillsData = [
     { name: "Appwrite", icon: React.createElement(SiAppwrite) },
     { name: "Prisma", icon: React.createElement(SiPrisma) },
     { name: "Firebase", icon: React.createElement(IoLogoFirebase) },
+    { name: "Oracle", icon: React.createElement(SiOracle) },
   ] as const;
