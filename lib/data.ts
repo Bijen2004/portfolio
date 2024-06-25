@@ -4,7 +4,7 @@ import chatGptCloneImg from "@/public/chatGptClone.png";
 import javaHotelBookingImg from "@/public/javaHotelBooking.png";
 import {IoLogoCss3 , IoLogoJavascript} from "react-icons/io"
 import {IoLogoFirebase} from "react-icons/io5"
-import {SiMysql , SiTypescript , SiTailwindcss , SiMongodb , SiExpress , SiAppwrite , SiPrisma, SiOracle} from "react-icons/si"
+import {SiMysql , SiTypescript , SiTailwindcss , SiMongodb , SiExpress , SiAppwrite , SiPrisma, SiOracle, SiThreedotjs} from "react-icons/si"
 import {TbBrandNextjs , TbBrandFramerMotion, TbBrandRedux} from "react-icons/tb"
 import {MdOutlineDesignServices} from "react-icons/md"
 import trelloAiCloneImg from "@/public/trelloAiClone.png"
@@ -106,6 +106,7 @@ export const skillsData = [
     { name: "UI/UX", icon: React.createElement(MdOutlineDesignServices) },
     { name: "Appwrite", icon: React.createElement(SiAppwrite) },
     { name: "Prisma", icon: React.createElement(SiPrisma) },
+    { name: "Three.js", icon: React.createElement(SiThreedotjs) },
     { name: "Firebase", icon: React.createElement(IoLogoFirebase) },
     { name: "Oracle", icon: React.createElement(SiOracle) },
   ] as const;
