@@ -117,7 +117,7 @@ const Chatbox: React.FC = () => {
 
           <div className="flex-1 overflow-y-auto p-3 dark:bg-gray-900">
             {messages.map((msg, index) => (
-              <div key={index} className={`my-2 p-2 rounded-lg ${msg.role === 'user' ? 'bg-purple-600 text-white ml-auto w-4/5' : 'bg-gray-300 dark:bg-gray-700 w-4/5'}`}>
+              <div key={index} className={`my-2 p-2 text-sm rounded-lg ${msg.role === 'user' ? 'bg-purple-600 text-white ml-auto w-4/5' : 'bg-gray-300 dark:bg-gray-700 w-4/5'}`}>
                 <div dangerouslySetInnerHTML={{ __html: msg.content }} />
               </div>
             ))}

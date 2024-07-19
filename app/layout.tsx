@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en" className='!scroll-smooth'>
       <head>
-      <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"/>
+        <meta httpEquiv="Content-Security-Policy" content="upgrade-insecure-requests" />
       </head>
       <body className={`${inter.className} bg-gray-50 text-gray-950 relative pt-36 dark:bg-gray-950 dark:text-gray-50 dark:text-opacity-90`}>
         <div className='bg-[#a9edf9] absolute top-[-6rem]  right-[11rem] h-[31.25rem] w-[31.25rem] rounded-full  blur-[10rem] sm:w-[68.75rem] dark:bg-[#2e2021]'></div>
