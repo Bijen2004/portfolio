@@ -8,6 +8,7 @@ import Footer from '@/components/Footer'
 import ThemeSwitch from '@/components/ThemeSwitch'
 import ThemeContextProvider from '@/context/theme-context'
 import SuspenseLayout from '@/components/SuspenseLayout'
+import Chatbox from '@/components/Chatbox'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -23,6 +24,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className='!scroll-smooth'>
+      <head>
+      <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"/>
+      </head>
       <body className={`${inter.className} bg-gray-50 text-gray-950 relative pt-36 dark:bg-gray-950 dark:text-gray-50 dark:text-opacity-90`}>
         <div className='bg-[#a9edf9] absolute top-[-6rem]  right-[11rem] h-[31.25rem] w-[31.25rem] rounded-full  blur-[10rem] sm:w-[68.75rem] dark:bg-[#2e2021]'></div>
         <div className='bg-[#f6a9eb] absolute top-[-1rem] -z-10 left-[-35rem] h-[31.25rem] w-[50rem] rounded-full  blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] dark:bg-[#1b1a27]'></div>
@@ -34,6 +38,7 @@ export default function RootLayout({
           <Footer />
         </SuspenseLayout>
         <Toaster position='top-right'/>
+        <Chatbox />
         <ThemeSwitch />
         </ActiveSectionContextProvider>
         </ThemeContextProvider>
