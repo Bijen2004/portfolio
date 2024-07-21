@@ -124,8 +124,9 @@ const Chatbox: React.FC = () => {
             <div ref={messagesEndRef} />
           </div>
 
-          <div className="bg-gradient-to-r from-purple-500 to-pink-500 dark:from-purple-700 dark:to-pink-700 p-3 flex items-center">
-            <input
+          <div className="bg-gradient-to-r from-purple-500 to-pink-500 dark:from-purple-700 dark:to-pink-700 p-3 pb-1 gap-1 flex flex-col items-center">
+              <div className='flex items-center'>
+                <input
               type="text"
               className="flex-1 p-2 rounded-lg dark:bg-gray-700 dark:text-white"
               placeholder="Write a message..."
@@ -141,6 +142,12 @@ const Chatbox: React.FC = () => {
             >
               Send
             </button>
+                </div>
+
+                
+            <div className='text-xs py-[2px]'>
+              Powered by <span className='font-bold cursor-pointer'><a href="https://aifagoon.com/" target='_blank'>Fagoon AI</a></span>
+              </div>
           </div>
         </div>
       )}
