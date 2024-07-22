@@ -79,7 +79,6 @@ const Chatbox: React.FC = () => {
   
       const data = await response.json();
   
-      // Check if data.response is defined and not null
       const responseMessage = data
         ? convertMarkdownToHtml(data)
         : 'No response from server';
@@ -145,7 +144,7 @@ const Chatbox: React.FC = () => {
                 </div>
 
                 
-            <div className='text-xs py-[2px]'>
+            <div className='text-xs py-[2px] text-white'>
               Powered by <span className='font-bold cursor-pointer'><a href="https://aifagoon.com/" target='_blank'>Fagoon AI</a></span>
               </div>
           </div>
