@@ -58,7 +58,7 @@ const Chatbox: React.FC = () => {
     setMessages((prevMessages) => [...prevMessages, { role: 'assistant', content: '...typing' }]);
   
     try {
-      const collection = 'bjnshr789789airesponse';
+      const collection = 'aboutbijenairesponse';
       const queryData = {
         query: inputValue,
         collection_name: collection,
