@@ -29,7 +29,7 @@ const Intro = () => {
                     type:"tween",
                     duration:0.2
                 }}>
-                <Image src="/Bijen.JPG" alt='Bijen' width="192" height="192" quality="95" priority={true}
+                <Image src="/Bijen.jpg" alt='Bijen' width="192" height="192" quality="95" priority={true}
                 className='h-[110px] w-[110px] sm:h-[160px] sm:w-[160px] rounded-full object-cover border-[0.25rem] border-white dark:border-white/30 shadow-xl'/>
                 </motion.div>
         </div>
