@@ -12,7 +12,7 @@ export const SuspenseLayout = ({
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsReady(true);
-    }, 1500);
+    }, 2300);
 
     return () => clearTimeout(timer);
   }, []);
