@@ -58,13 +58,13 @@ const Chatbox: React.FC = () => {
     setMessages((prevMessages) => [...prevMessages, { role: 'assistant', content: '...typing' }]);
   
     try {
-      const collection = 'aboutbijenairesponse';
       const queryData = {
-        query: inputValue,
-        collection_name: collection,
+        convo: [...messages,{ role: 'user', content: inputValue }],
+        agent: true,
+        agent_id: '66aca92623f42a885dc28ffb_BijenShresthaAi',
       };
   
-      const response = await fetch('https://immi-api.fagoondigital.com/query', {
+      const response = await fetch('https://api.fagoon.ai/api/v1/upgrade/chat', {
         method: 'POST',
         body: JSON.stringify(queryData),
         mode: 'cors',
