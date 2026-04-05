@@ -8,7 +8,7 @@ import Footer from '@/components/Footer'
 import ThemeSwitch from '@/components/ThemeSwitch'
 import ThemeContextProvider from '@/context/theme-context'
 import SuspenseLayout from '@/components/SuspenseLayout'
-import Chatbox from '@/components/Chatbox'
+// import Chatbox from '@/components/Chatbox'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -38,7 +38,7 @@ export default function RootLayout({
           <Footer />
         </SuspenseLayout>
         <Toaster position='top-right'/>
-        <Chatbox />
+        {/* <Chatbox /> */}
         <ThemeSwitch />
         </ActiveSectionContextProvider>
         </ThemeContextProvider>
